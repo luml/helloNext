@@ -15,6 +15,28 @@ const Index = props => (
                 </li>
             ))}
         </ul>
+        <style jsx>{`
+            h1,
+            a {
+                font-family: 'Arial';
+            }
+
+            ul {
+                padding: 0 20px;
+            }
+
+            li {
+                margin: 10px 0;
+            }
+
+            a {
+                color: deepPink;
+            }
+
+            a:hover {
+                opacity: 0.6;
+            }
+        `}</style>
     </Layout>
 )
 
