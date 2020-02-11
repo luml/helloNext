@@ -1,20 +1,10 @@
 import Link from 'next/link'
+import Layout from '../components/layout'
 
 export default function Index() {
     return (
-        <div>
-            <ul>
-                <li>
-                    <Link href="/">
-                        <a>Home</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/about">
-                        <a>About Us</a>
-                    </Link>
-                </li>
-            </ul>
+        <Layout>
+            <p>Hello Next.js</p>
             <ul>
                 <li>
                     <Link href="/blog/[slug]" as="/blog/hello-world">
@@ -22,6 +12,6 @@ export default function Index() {
                     </Link>
                 </li>
             </ul>
-        </div>
+        </Layout>
     )
 }
